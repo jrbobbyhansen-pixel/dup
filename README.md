@@ -40,6 +40,16 @@ pip install pytest
 pytest -v
 ```
 
+## Benchmarks
+
+| Test | Files | manta-dup | find+sort (baseline) |
+|------|-------|-----------|---------------------|
+| Small | 10 | 0.06s, 0.05MB | 0.04s, 0.07MB |
+| Medium | 50 | 0.05s, 0.05MB | 0.16s, 0.07MB |
+| Large | 100 | 0.05s, 0.05MB | 0.34s, 0.07MB |
+
+Run your own: `python3 benchmark_dup.py`
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
