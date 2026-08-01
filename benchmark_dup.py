@@ -85,7 +85,7 @@ def main():
             test_dir = create_test_dir(tmpdir, num_files, 1)  # 1KB files
 
             # Benchmark manta-dup
-            dup_script = os.path.join(os.path.dirname(__file__), "..", "dup.py")
+            dup_script = os.path.join(os.path.dirname(__file__), "dup.py")
             if os.path.exists(dup_script):
                 r = benchmark_tool(
                     "manta-dup", [sys.executable, dup_script, test_dir], test_dir
