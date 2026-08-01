@@ -1,0 +1,49 @@
+.TH MANTA-DUP 1 "manta-dup v1.0.0" "Manta Tools" "User Commands"
+.SH NAME
+manta-dup \- find duplicate files by content hash
+.SH SYNOPSIS
+.B dup [options] <path...>
+.SH DESCRIPTION
+Scan directories and find duplicate files by SHA-256 content hash. Lists groups of duplicates with their sizes. Zero external dependencies.
+.SH OPTIONS
+.TP
+.B path...
+One or more directories to scan
+.TP
+.B -s, --size
+Show file sizes in output
+.TP
+.B -f, --follow-symlinks
+Follow symbolic links
+.TP
+.B -q, --quiet
+Suppress progress output
+.TP
+.B --version
+Show version and exit
+.SH EXAMPLES
+.TP
+Find duplicates in a directory
+.B dup ~/Downloads
+.TP
+Show sizes
+.B dup -s ~/Documents
+.TP
+Scan multiple directories
+.B dup ~/Pictures ~/Videos
+.TP
+Quiet mode
+.B dup -q ~/Downloads
+.SH EXIT CODES
+.TP
+.B 0
+No duplicates found
+.TP
+.B 1
+Duplicates found or error
+.SH AUTHOR
+Bobby Hansen Jr. (Hansen Capital Group LLC)
+.SH REPORTING BUGS
+https://github.com/jrbobbyhansen-pixel/dup/issues
+.SH COPYRIGHT
+Copyright 2026 Hansen Capital Group LLC. License MIT.
