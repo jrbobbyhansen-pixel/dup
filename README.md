@@ -37,5 +37,13 @@ Exit code: `0` if no duplicates found, `1` if duplicates were found.
 
 ```bash
 pip install pytest
-pytest test_dup.py -v
+pytest -v
 ```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+---
+
+Part of the [Manta](https://github.com/jrbobbyhansen-pixel) collection — zero-dependency CLI tools for developers.
